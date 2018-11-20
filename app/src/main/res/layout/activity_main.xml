@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="406dp"
+        android:layout_height="602dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+        <!--<FrameLayout-->
+        <!--android:layout_width="410dp"-->
+        <!--android:layout_height="601dp"-->
+        <!--tools:layout_editor_absoluteX="0dp"-->
+        <!--tools:layout_editor_absoluteY="0dp"-->
+        <!--tools:ignore="MissingConstraints">-->
+
+
+        <Button
+            android:layout_width="86dp"
+            android:layout_height="86dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="130dp"
+            android:onClick="clickStar"
+            android:text="*"
+            tools:ignore="MissingConstraints,OnClick"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="98dp" />Button
+
+        <Button
+            android:layout_width="86dp"
+            android:layout_height="86dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="114dp"
+            android:layout_marginTop="129dp"
+            android:onClick="clickDiv"
+            android:text="/"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="113dp"
+            tools:layout_editor_absoluteY="98dp" />Button
+
+        <Button
+            android:layout_width="86dp"
+            android:layout_height="86dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="129dp"
+            android:layout_marginEnd="108dp"
+            android:onClick="clickPlus"
+            android:text="+"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="211dp"
+            tools:layout_editor_absoluteY="98dp" />Button
+
+        <Button
+            android:layout_width="86dp"
+            android:layout_height="86dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="129dp"
+            android:layout_marginEnd="10dp"
+            android:onClick="clickMinus"
+            android:text="-"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="310dp"
+            tools:layout_editor_absoluteY="98dp" />Button
+
+
+        <Button
+            android:layout_width="86dp"
+            android:layout_height="86dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="219dp"
+            android:onClick="clickSeven"
+            android:text="7"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="194dp" />Button
+
+        <Button
+            android:layout_width="86dp"
+            android:layout_height="86dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="114dp"
+            android:layout_marginTop="220dp"
+            android:onClick="clickEight"
+            android:text="8"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="113dp"
+            tools:layout_editor_absoluteY="194dp" />Button
+
+        <Button
+            android:layout_width="86dp"
+            android:layout_height="86dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="220dp"
+            android:layout_marginEnd="108dp"
+            android:onClick="clickNine"
+            android:text="9"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="211dp"
+            tools:layout_editor_absoluteY="194dp" />Button
+
+        <Button
+            android:layout_width="86dp"
+            android:layout_height="86dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="13dp"
+            android:layout_marginBottom="207dp"
+            android:onClick="clickFour"
+            android:text="4"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="293dp" />Button
+
+        <Button
+            android:layout_width="86dp"
+            android:layout_height="86dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="112dp"
+            android:layout_marginTop="309dp"
+            android:onClick="clickFive"
+            android:text="5"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="114dp"
+            tools:layout_editor_absoluteY="293dp" />Button
+
+        <Button
+            android:layout_width="86dp"
+            android:layout_height="86dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="214dp"
+            android:layout_marginTop="309dp"
+            android:onClick="clickSix"
+            android:text="6"
+            tools:ignore="HardcodedText,MissingConstraints"
+            tools:layout_editor_absoluteX="211dp"
+            tools:layout_editor_absoluteY="293dp" />Button
+
+        <Button
+            android:layout_width="86dp"
+            android:layout_height="86dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="13dp"
+            android:layout_marginBottom="115dp"
+            android:onClick="clickOne"
+            android:text="1"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="395dp" />Button
+
+        <Button
+            android:layout_width="86dp"
+            android:layout_height="86dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="112dp"
+            android:layout_marginTop="401dp"
+            android:onClick="clickTwo"
+            android:text="2"
+            tools:ignore="HardcodedText,MissingConstraints"
+            tools:layout_editor_absoluteX="114dp"
+            tools:layout_editor_absoluteY="395dp" />Button
+
+        <Button
+            android:layout_width="86dp"
+            android:layout_height="86dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="212dp"
+            android:layout_marginBottom="115dp"
+            android:onClick="clickThree"
+            android:text="3"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="211dp"
+            tools:layout_editor_absoluteY="395dp" />Button
+
+        <Button
+            android:layout_width="136dp"
+            android:layout_height="86dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="492dp"
+            android:layout_marginEnd="106dp"
+            android:onClick="clickZero"
+            android:text="0"
+            tools:ignore="MissingConstraints,OnClick"
+            tools:layout_editor_absoluteX="161dp"
+            tools:layout_editor_absoluteY="492dp" />Button
+
+        <Button
+            android:layout_width="136dp"
+            android:layout_height="86dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="257dp"
+            android:layout_marginBottom="24dp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="492dp" />Button
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="176dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="221dp"
+            android:layout_marginEnd="10dp"
+            android:onClick="clickClear"
+            android:text="C"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="310dp"
+            tools:layout_editor_absoluteY="194dp" />Button
+
+        <Button
+            android:layout_width="86dp"
+            android:layout_height="176dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="24dp"
+            android:onClick="clickResult"
+            android:text="="
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="310dp"
+            tools:layout_editor_absoluteY="395dp" />Button
+
+    </RelativeLayout>
+    
+
+
+</android.support.constraint.ConstraintLayout>
