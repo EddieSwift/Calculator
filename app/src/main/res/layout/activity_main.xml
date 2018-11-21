@@ -12,12 +12,6 @@
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="0dp">
-        <!--<FrameLayout-->
-        <!--android:layout_width="410dp"-->
-        <!--android:layout_height="601dp"-->
-        <!--tools:layout_editor_absoluteX="0dp"-->
-        <!--tools:layout_editor_absoluteY="0dp"-->
-        <!--tools:ignore="MissingConstraints">-->
 
 
         <Button
@@ -241,7 +235,6 @@
             tools:layout_editor_absoluteY="395dp" />Button
 
     </RelativeLayout>
-    
 
 
 </android.support.constraint.ConstraintLayout>
