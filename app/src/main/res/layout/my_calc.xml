@@ -174,8 +174,8 @@
                     android:orientation="horizontal">
 
                     <Button
-                        android:id="@+id/negative_btn"
-                        android:text="+/-"
+                        android:id="@+id/point_btn"
+                        android:text="."
                         android:textSize="28sp"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"

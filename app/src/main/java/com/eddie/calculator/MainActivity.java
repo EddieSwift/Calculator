@@ -10,9 +10,8 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private TextView myText;
-    private int firstValue;
-    private int secondValue;
     private boolean mAddition, mSubtract, mMultiplication, mDivision;
+    private String operand;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +33,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Button resultButton = findViewById(R.id.result_btn);
         Button minusButton = findViewById(R.id.minus_btn);
         Button multiButton = findViewById(R.id.multiplication_btn);
+        Button divideButton = findViewById(R.id.divide_btn);
+        Button pointButton = findViewById(R.id.point_btn);
 
         myText = findViewById(R.id.text_disp);
 
@@ -52,6 +53,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         resultButton.setOnClickListener(this);
         minusButton.setOnClickListener(this);
         multiButton.setOnClickListener(this);
+        divideButton.setOnClickListener(this);
+        pointButton.setOnClickListener(this);
     }
 
     @Override
@@ -117,73 +120,96 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             str += 0;
             myText.setText(str);
 
+        } else if (v.getId() == R.id.point_btn) {
+
+            String str = String.valueOf(myText.getText());
+            myText.setText(str + ".");
+
+//            if(myText.getHint().toString().isEmpty()){
+//
+//                myText.setHint("0");
+//
+//            } else {
+//
+//                myText.setHint("");
+//                myText.setText("");
+//                operand = null;
+//            }
         } else if (v.getId() == R.id.clear_btn) {
 
-            String str = "";
-            myText.setText(str);
+            operand = null;
+            myText.setText("");
 
         } else if (v.getId() == R.id.plus_btn) {
 
-            if (myText == null) {
 
-                myText.setText("");
+            mAddition = true;
+            operand = String.valueOf(myText.getText());
+            myText.setText("");
 
-            } else {
 
-                firstValue = Integer.parseInt(String.valueOf(myText.getText()));
-                mAddition = true;
-                myText.setText(null);
+        } else if (v.getId() == R.id.minus_btn) {
 
+
+            operand = String.valueOf(myText.getText());
+            mSubtract = true;
+            myText.setText(null);
+
+        } else if (v.getId() == R.id.multiplication_btn) {
+
+            operand = String.valueOf(myText.getText());
+            mMultiplication = true;
+            myText.setText(null);
+
+        } else if (v.getId() == R.id.divide_btn) {
+
+            operand = String.valueOf(myText.getText());
+            mDivision = true;
+            myText.setText(null);
+
+        } else if (v.getId() == R.id.result_btn) {
+
+            if (operand == null) {
+
+                return;
             }
 
+//            int a = Integer.parseInt(operand);
+//            int b = Integer.parseInt(myText.getText().toString());
 
-            if (v.getId() == R.id.minus_btn) {
+            double a = Double.parseDouble(operand);
+            double b = Double.parseDouble(myText.getText().toString());
 
-                firstValue = Integer.parseInt(String.valueOf(myText.getText()));
-                mSubtract = true;
-                myText.setText(null);
 
+            if (mAddition == true) {
+
+                myText.setText((a + b) + "");
+
+                mAddition = false;
+
+            } else if (mSubtract == true) {
+
+                myText.setText((a - b) + "");
+
+                mSubtract = false;
+
+            } else if (mMultiplication == true) {
+
+                myText.setText((a * b) + "");
+
+                mMultiplication = false;
+
+            } else if (mDivision == true) {
+
+                myText.setText(((a / b)) + "");
+
+                mDivision = false;
             }
 
-            if (v.getId() == R.id.multiplication_btn) {
+            operand = null;
 
-                firstValue = Integer.parseInt(String.valueOf(myText.getText()));
-                mMultiplication = true;
-                myText.setText(null);
-
-            }
-
-            if (v.getId() == R.id.result_btn) {
-
-                secondValue = Integer.parseInt(String.valueOf(myText.getText()));
-
-                if (mAddition == true) {
-
-                    myText.setText(firstValue + secondValue);
-                    mAddition = false;
-                }
-
-                if (mSubtract == true) {
-
-                    myText.setText(firstValue - secondValue);
-                    mSubtract = false;
-                }
-
-                if (mMultiplication == true) {
-
-                    myText.setText(firstValue * secondValue);
-                }
-
-            }
         }
     }
-
-
-
-
-
-//    @Override
-//    public void onPointerCaptureChanged(boolean hasCapture) {
-//
-//    }
 }
+
+
