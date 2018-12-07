@@ -123,18 +123,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         } else if (v.getId() == R.id.point_btn) {
 
             String str = String.valueOf(myText.getText());
-            myText.setText(str + ".");
 
-//            if(myText.getHint().toString().isEmpty()){
-//
-//                myText.setHint("0");
-//
-//            } else {
-//
-//                myText.setHint("");
-//                myText.setText("");
-//                operand = null;
-//            }
+            if (!String.valueOf(myText.getText()).contains(".")) {
+
+                myText.setText(str + ".");
+            }
+
         } else if (v.getId() == R.id.clear_btn) {
 
             operand = null;
@@ -142,14 +136,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         } else if (v.getId() == R.id.plus_btn) {
 
-
             mAddition = true;
             operand = String.valueOf(myText.getText());
             myText.setText("");
 
-
         } else if (v.getId() == R.id.minus_btn) {
-
 
             operand = String.valueOf(myText.getText());
             mSubtract = true;
@@ -174,12 +165,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 return;
             }
 
-//            int a = Integer.parseInt(operand);
-//            int b = Integer.parseInt(myText.getText().toString());
-
             double a = Double.parseDouble(operand);
             double b = Double.parseDouble(myText.getText().toString());
-
 
             if (mAddition == true) {
 
